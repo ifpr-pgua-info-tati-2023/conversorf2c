@@ -10,26 +10,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final _controller = Controller();
-
-  void _adicionarDigito(String digito) {
-    setState(() {
-      _controller.adicionarDigito(digito);
-    });
-  }
-
-  void _calcular() {
-    setState(() {
-      _controller.converter();
-    });
-  }
-
-  void _limpar() {
-    setState(() {
-      _controller.limpar();
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
